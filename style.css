@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+:root {
+  --site-color: #fc004a;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  padding: 18px 0;
+  border-bottom: 1px solid black;
+}
+
+.burger {
+  display: none;
+}
+
+.header-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.right {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.header-btn {
+  width: 256px;
+  height: 36px;
+  background-color: var(--site-color);
+  border-radius: 12px;
+  border: none;
+  color: white;
+}
+
+.right a {
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+
+  transition: all 0.4s;
+}
+
+.right a:hover {
+  color: var(--site-color);
+}
+
+.right a:first-child {
+  color: var(--site-color);
+}
+
+.aksiya {
+  padding: 66px 0;
+}
+
+.aksiya img {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.product-item {
+  width: 235px;
+  height: 391px;
+  padding: 12px;
+
+  box-shadow: 0px 10px 15px -3px #0000001a;
+}
+
+.product-item h4 {
+  font-size: 18px;
+  margin: 16px 0;
+}
+
+footer {
+  padding: 60px 0;
+}
+.footer-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-item p {
+  font-size: 19px;
+  color: var(--site-color);
+  margin: 16px 0;
+}
+
+.plus {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.plus button {
+  width: 40px;
+  height: 40px;
+  background-color: var(--site-color);
+  border-radius: 10px;
+  font-size: 40px;
+  color: white;
+  border: 1px solid var(--site-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.plus button:hover {
+  background-color: transparent;
+  color: var(--site-color);
+}
+
+@media (max-width: 830px) {
+  .logo {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .burger {
+    display: block;
+  }
+  .right {
+    display: none;
+  }
+  .header-btn {
+    width: 200px;
+  }
+
+  .footer-box {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
